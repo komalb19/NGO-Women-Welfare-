@@ -30,7 +30,7 @@ li{
 .nav-menu{
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 60px;
     margin: 20px 10px;
     padding-top: 20px;
 }
@@ -38,7 +38,7 @@ li{
 a{
     text-decoration: none;
     color: black;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .nav-bar{
@@ -183,8 +183,8 @@ i{
  }
 
 .facebook-icon img{
-    width: 80px;
-    height: auto;
+    width: 60px;
+    height: 80px;
 }
 
 .contact {
@@ -280,7 +280,7 @@ i{
 }
 
 .about p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.6em;
     margin-bottom: 20px;
     color: #7f8c8d;
@@ -413,6 +413,9 @@ i{
     .about h2 {
         font-size: 2em;
     }
+
+    .about p{
+        font-size: 1.5em}
 
     .services {
         padding: 10px;
