@@ -337,7 +337,6 @@ i{
     color: #7f8c8d;
 }
 
-
 @media screen and (max-width: 1024px) {
     .hamburger{
         display: block;
@@ -395,13 +394,61 @@ i{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1023px) and (min-width:700px){
+
+    .hamburger{
+        display: block;
+        right: 50px;
+    }
     .stories{
-        display: flex;}
+        display: flex;
+        width: 100%;
+    }
     
+    .jobs img{
+        width: 30%;
+    }
+
+    .jobs{
+        align-items: center;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width:400px) {
+    .hamburger{
+        display: block;
+        margin: 10px 0;
+        left: 150px;
+    }
+
+    .banner img{
+        object-fit: cover;
+        width: 130%;
+    }
+
+    .banner .text{
+        top: 10%;
+    }
+
+    .jobs{
+        align-items: center;
+    }
+    .story3{
+        display: none;
+    }
+
+    .stories{
+        justify-content: space-between;
+        display: inline-flex;
+    }
+
+    .story1, .story2{
+        justify-content: space-between;
+    }
+    .jobs img{
+        max-width: 30%;
+        max-height: auto;
+    }
     .about {
         padding: 10px;
     }
@@ -413,9 +460,6 @@ i{
     .about h2 {
         font-size: 2em;
     }
-
-    .about p{
-        font-size: 1.5em}
 
     .services {
         padding: 10px;
@@ -432,4 +476,19 @@ i{
     .services p {
         font-size: 1.5em;
     }
+
+    .footer{
+        width: 130%;
+    }
+
+    .footer a{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .footer img{
+        width: 40px;
+        height: 35px;
+    }
+
 }
