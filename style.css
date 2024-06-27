@@ -337,6 +337,7 @@ i{
     color: #7f8c8d;
 }
 
+
 @media screen and (max-width: 1024px) {
     .hamburger{
         display: flex;
@@ -418,7 +419,7 @@ i{
     .hamburger{
         display: block;
         margin: 10px 0;
-        left: 150px;
+        left: auto;
     }
 
     .banner img{
@@ -450,7 +451,8 @@ i{
         max-height: auto;
     }
     .about {
-        padding: 10px;
+        padding: 10px auto;
+        align-self: center;
     }
 
     .about h1 {
@@ -462,7 +464,7 @@ i{
     }
 
     .services {
-        padding: 10px;
+        padding: 10px auto;
     }
 
     .services h1 {
