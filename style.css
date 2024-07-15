@@ -364,7 +364,7 @@ i{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .hamburger{
         display: flex;
         position: relative;
@@ -537,13 +537,13 @@ i{
 
 }
 
-@media screen and (min-width:580px) and (max-width:767px) {
+/* @media screen and (min-width:580px) and (max-width:767px) {
     .story3{
         display: flex;
     }
-}
+} */
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     .banner .text {
         font-size: 0.8em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -582,3 +582,4 @@ i{
         max-height: auto;
     }
 }
+ */
