@@ -30,7 +30,7 @@ li{
 .nav-menu{
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 80px;
     margin: 20px 10px;
     padding-top: 20px;
 }
@@ -38,7 +38,7 @@ li{
 a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .nav-bar{
@@ -74,6 +74,7 @@ a{
 
 .banner{
     position: relative;
+    width: 100%;
 }
 
 .banner img{
@@ -89,10 +90,10 @@ a{
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 50px;
 }
 
-.stories{
+/* .stories{
     position: relative;
     text-align: center;
     margin: 10px 0;
@@ -112,7 +113,31 @@ a{
     border: 2px solid black;
     border-radius: 10px;
     width: 33%;
+} */
+
+.stories {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.story h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.story1, .story2, .story3 {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.story1 h3, .story2 h3, .story3 h3 {
+    margin-top: 0;
+}
+
 
 h3{
     font-size: 30px;
@@ -183,8 +208,8 @@ i{
  }
 
 .facebook-icon img{
-    width: 60px;
-    height: 80px;
+    width: 80px;
+    height: auto;
 }
 
 .contact {
@@ -255,6 +280,7 @@ i{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    align-items: center;
 }
 
 .about h1 {
@@ -280,7 +306,7 @@ i{
 }
 
 .about p {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.6em;
     margin-bottom: 20px;
     color: #7f8c8d;
@@ -337,7 +363,8 @@ i{
     color: #7f8c8d;
 }
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 1024px) {
     .hamburger{
         display: flex;
         position: relative;
@@ -394,7 +421,7 @@ i{
     }
 }
 
-@media screen and (max-width:1023px) and (min-width:700px){
+/* @media screen and (max-width:1023px) and (min-width:700px){
 
     .hamburger{
         display: block;
@@ -411,9 +438,9 @@ i{
     .jobs{
         align-items: center;
     }
-}
+} */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hamburger{
         display: block;
         margin: 10px 0;
@@ -443,7 +470,7 @@ i{
     .jobs{
         align-items: center;
     }
-    .story3{
+    /* .story3{
         display: none;
     }
 
@@ -454,6 +481,12 @@ i{
 
     .story1, .story2{
         justify-content: space-between;
+    } */
+
+    .story1, .story2, .story3 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
     }
     .jobs img{
         max-width: 30%;
@@ -489,12 +522,12 @@ i{
     }
 
     .footer{
-        width: 130%;
+        max-width: 100%;
     }
 
     .footer a{
-        width: 100%;
-        font-size: 20px;
+        width: 50%;
+        font-size: 15px;
     }
 
     .footer img{
@@ -503,14 +536,14 @@ i{
     }
 
 }
-
+/* 
 @media screen and (min-width:580px) and (max-width:767px) {
     .story3{
         display: flex;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
     .banner .text {
         font-size: 0.8em;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -521,4 +554,31 @@ i{
     .banner img{
         width: 130%;
     }
-}
+
+    .jobs{
+        align-items: center;
+    }
+    .story3{
+        display: none;
+    }
+
+    .story{
+        display: block;
+    }
+
+    /* .stories{
+        justify-content: space-between;
+        display: inline-block;
+        width: 100%;
+    } */
+
+    .story1, .story2{
+        justify-content: space-between;
+        display: inline-flex;
+        width: 30%;
+    }
+    .jobs img{
+        max-width: 30%;
+        max-height: auto;
+    }
+} */
